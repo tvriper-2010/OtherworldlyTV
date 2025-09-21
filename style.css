@@ -1,0 +1,25 @@
+.Zagolovok{
+	.OnTVTime{
+		text-align: center;
+		color: white;
+		font-family: Segoe UI;
+	}
+
+	.Description{
+		text-align: center;
+		color: white;
+		font-family: Segoe UI;
+	}
+}
+
+body{
+	background-color: darkblue;
+}
+
+.Videos{
+	.name{
+		text-align: center;
+		color: white;
+		font-family: Segoe UI;
+	}
+}
