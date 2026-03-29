@@ -7,9 +7,13 @@
 	<title>Otherworldly TV - CamRIP-ы и TVRIP-ы.</title>
 </head>
 <body>
+	<div class="crt-effect"></div>
+    <div class="scan-line"></div>
+    <div class="noise"></div>
+
 	<div class="Zagolovok">
-		<h1 class="OnTVTime">Otherworldly TV</h1>
-		<h3 class="Description">На этом сайте вы найдёте эфиры российских телеканалов из потустороннего мира.</h3>
+		<h1 class="glitch" style="text-align: center; color: white; font-family: Segoe UI">Otherworldly TV</h1>
+		<h3 class="typewriter" style="text-align: center; color: white; font-family: Segoe UI;">На этом сайте вы найдёте эфиры российских телеканалов из потустороннего мира.</h3>
 	</div>
 
 	<div class="Videos">
@@ -81,7 +85,7 @@
 		</center>
 		<h1>ㅤ</h1>
 		<h1>ㅤ</h1>
-		<h2 class="name">odinochestvo2009.avi</h2>
+		<h2 class="name">masha_and_the_bear_2011.mp4</h2>
 		<center>
 			<video src=".\video\masha_and_the_bear_2011.mp4" width="500px" controls></video>
 		</center>
@@ -152,25 +156,40 @@
 			<video src=".\video\Animax_9_November_2016.mkv.mp4" width="500px" controls></video>
 		</center>
 	</div>
+		<h1>ㅤ</h1>
+	<h3 class="blink" style="text-align: center; color: gray; font-family: Courier New;">© prostoilya_sgt 2025 - 2026</h3>
+
+	<script>
+		        function randomGlitch() {
+            const glitchElements = document.querySelectorAll('.glitch');
+            glitchElements.forEach(element => {
+                if (Math.random() > 0.7) {
+                    element.style.animation = 'none';
+                    setTimeout(() => {
+                        element.style.animation = 'glitch 5s infinite';
+                    }, 100);
+                }
+            });
+        }
+
+        setInterval(randomGlitch, 3000);
+
+                document.addEventListener('DOMContentLoaded', function() {
+            const typewriterElements = document.querySelectorAll('.typewriter');
+            typewriterElements.forEach(element => {
+                const text = element.textContent;
+                element.textContent = '';
+                let i = 0;
+                function typeWriter() {
+                    if (i < text.length) {
+                        element.textContent += text.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 100);
+                    }
+                }
+                typeWriter();
+            });
+        });
+	</script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
